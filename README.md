@@ -8,6 +8,7 @@
 <p align="center">
   <img alt="Linguagem mais usada Javascript" src="https://img.shields.io/github/languages/top/pedro-lisboa/covid-tracker-br?style=flat">
   <img alt="Objetivo: estudo" src="https://img.shields.io/badge/purpose-study-lightgrey?style=flat">
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/ae695107-60d5-40a3-bce4-ddee0eedc7fd/deploy-status)](https://app.netlify.com/sites/covid-tracker-br/deploys)
 </p>
 
 <p align="center">
