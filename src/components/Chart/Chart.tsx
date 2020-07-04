@@ -45,7 +45,7 @@ const Chart: React.FC<PropsFetched> = (props: PropsFetched) => {
       width={600}
       data={{
         labels: [
-          `Números da COVID-19 no Brasil, última atualização às ${new Date(
+          `Números do COVID-19 no Brasil, última atualização às ${new Date(
             brDate,
           ).toLocaleTimeString()} do dia ${new Date(
             brDate,
@@ -54,22 +54,22 @@ const Chart: React.FC<PropsFetched> = (props: PropsFetched) => {
         datasets: [
           {
             label: 'Infectados',
-            backgroundColor: ['rgba(62, 193, 65, 0.6)'],
-            borderWidth: 2,
-            borderColor: ['rgba(62, 193, 65, 0.6)'],
-            hoverBorderColor: ['rgba(62, 193, 65, 1)'],
-            data: [brConfirmed],
-          },
-          {
-            label: 'Recuperados',
             backgroundColor: ['rgba(65, 62, 193, 0.6)'],
             borderWidth: 2,
             borderColor: ['rgba(65, 62, 193, 0.6)'],
             hoverBorderColor: ['rgba(65, 62, 193, 1)'],
+            data: [brConfirmed],
+          },
+          {
+            label: 'Recuperados',
+            backgroundColor: ['rgba(62, 193, 65, 0.6)'],
+            borderWidth: 2,
+            borderColor: ['rgba(62, 193, 65, 0.6)'],
+            hoverBorderColor: ['rgba(62, 193, 65,, 1)'],
             data: [brRecovered],
           },
           {
-            label: 'Óbitos',
+            label: 'Mortos',
             backgroundColor: ['rgba(193, 65, 62, 0.6)'],
             borderWidth: 2,
             borderColor: ['rgba(193, 65, 62, 0.6)'],
@@ -100,18 +100,18 @@ const Chart: React.FC<PropsFetched> = (props: PropsFetched) => {
         datasets: [
           {
             label: 'Infectados',
-            backgroundColor: ['rgba(62, 193, 65, 0.5)'],
+            backgroundColor: ['rgba(65, 62, 193, 0.6)'],
             borderWidth: 2,
-            borderColor: ['rgba(62, 193, 65, 0.5)'],
-            hoverBorderColor: ['rgba(62, 193, 65, 1)'],
+            borderColor: ['rgba(65, 62, 193, 0.6)'],
+            hoverBorderColor: ['rgba(65, 62, 193, 1)'],
             data: [ufConfirmed],
           },
           {
             label: 'Recuperados',
-            backgroundColor: ['rgba(65, 62, 193, 0.5)'],
+            backgroundColor: ['rgba(62, 193, 65, 0.6)'],
             borderWidth: 2,
-            borderColor: ['rgba(65, 62, 193, 0.5)'],
-            hoverBorderColor: ['rgba(65, 62, 193, 1)'],
+            borderColor: ['rgba(62, 193, 65, 0.6)'],
+            hoverBorderColor: ['rgba(62, 193, 65,, 1)'],
             data: [ufRecovered],
           },
           {
